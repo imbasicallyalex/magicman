@@ -29,7 +29,7 @@
       wdosboxUrl: "/wdosbox.js",
       cycles: 750,
     }).ready(function (fs, main) {
-      fs.extract("game/DOOM.zip").then(function () {
+      fs.extract("DOOM.zip").then(function () {
         main(["-c", "DOOM.exe"]).then(function (ci) {
           window.Module = ci.dos;
           window.ci = ci;
